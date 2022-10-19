@@ -1,7 +1,11 @@
+package metodos;
 import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+
+import entidades.Aluno;
+import entidades.Pessoa;
 
 public class Metodos {
     Scanner sc = new Scanner(System.in);

@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import entidades.Pessoa;
+import metodos.Metodos;
+
 public class App {
 
     public static void main(String[] args) {
