@@ -52,14 +52,11 @@ public class Metodos {
     }
 
     public void mostrarDados(List<Pessoa> lista) {
-        try {
-            for (Pessoa pessoa : lista) {
-                if (pessoa.getNome() != null && pessoa.getDataDeNascimento() != null) {
-                    System.out.println(pessoa.toString());
-                }
-            }
-        } catch (NullPointerException e) {
+        if (lista.size() == 0) {
             System.out.println("Não há usuários cadastrados!");
+        } else {
+            for (Pessoa pessoa : lista)
+                System.out.println(pessoa.toString());
         }
     }
 
