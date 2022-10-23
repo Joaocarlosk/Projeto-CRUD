@@ -9,7 +9,8 @@ public class App {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int opcao = 5;
+        int opcao = 0;
+        boolean sistemaAtivo = true;
         List<Pessoa> listaPessoas = new ArrayList<>();
         Metodos metodos = new Metodos();
         System.out.printf("PROJETO CRUD PROGRAMA +PRATI\n");
@@ -49,10 +50,10 @@ public class App {
                 }
                 case 0: {
                     System.out.println("Encerrando sistema!");
-                    opcao = 0;
+                    sistemaAtivo = false;
                 }
             }
-        } while (opcao != 0);
+        } while (sistemaAtivo);
         sc.close();
     }
 }
